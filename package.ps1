@@ -13,6 +13,7 @@ New-Item -ItemType Directory -Force -Path $packageDir | Out-Null
 $files = @(
     'dist\HotspotAuto.exe',
     'README.md',
+    'README.en.md',
     '使用说明.txt',
     'LICENSE',
     '安装开机自启.bat',

@@ -1,5 +1,7 @@
 # 移动热点自动开启（HotspotAuto）
 
+**中文** | [English](README.en.md)
+
 一个独立的 Windows 小程序：**开机时自动开启“移动热点”**，不需要先登录桌面。
 不依赖 DSH、Python、.NET 8 或任何第三方运行库，单个 exe 即可运行。
 
@@ -160,6 +162,7 @@ HotspotAuto/
 ├─ package.ps1           编译并生成发布 zip
 ├─ make-icon.py          重新生成图标（可选，需要 Pillow）
 ├─ README.md
+├─ README.en.md
 ├─ 使用说明.txt
 ├─ CHANGELOG.md
 └─ LICENSE
