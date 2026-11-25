@@ -18,12 +18,19 @@ $files = @(
     '安装开机自启.bat',
     '卸载开机自启.bat',
     '关闭快速启动.bat',
-    '恢复快速启动.bat'
+    '恢复快速启动.bat',
+    'docs\screenshot.png'
 )
 foreach ($rel in $files) {
     $from = Join-Path $root $rel
     if (-not (Test-Path $from)) { throw "Missing file: $from" }
-    Copy-Item $from (Join-Path $packageDir (Split-Path -Leaf $rel)) -Force
+    if ($rel -like 'docs\*') {
+        $dest = Join-Path $packageDir $rel
+        New-Item -ItemType Directory -Force -Path (Split-Path -Parent $dest) | Out-Null
+    } else {
+        $dest = Join-Path $packageDir (Split-Path -Leaf $rel)
+    }
+    Copy-Item $from $dest -Force
 }
 
 if (Test-Path $zipPath) { Remove-Item $zipPath -Force }
