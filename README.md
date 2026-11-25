@@ -121,7 +121,7 @@ HotspotAuto.exe version    显示版本
 程序没有数字签名。点“更多信息 → 仍要运行”即可。
 
 **安装/卸载时会不会弹 UAC？**
-本机 UAC 设置为“不提示直接提权”，所以是静默的；其他电脑可能会弹一次。
+取决于你的 UAC 设置，可能会弹一次，允许即可。
 
 **日志在哪？**
 `C:\ProgramData\HotspotAuto\hotspot.log`。后台任务以 SYSTEM 运行，日志由它写入。

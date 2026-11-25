@@ -30,11 +30,13 @@ It does not depend on DSH, Python, .NET 8, or any third-party runtime — a sing
 Download `HotspotAuto-1.0.0.zip` from [Releases](../../releases/latest), extract it, and run `HotspotAuto.exe`.
 You can also download `HotspotAuto.exe` directly (single file).
 
+> The GUI and command-line messages are currently in Chinese; this English README documents the same behavior.
+
 ## Quick start
 
 1. Double-click `HotspotAuto.exe`.
-2. Click **Install at startup**.
-3. When you see "Startup: installed", you're done.
+2. Click **安装开机自启** (Install at startup).
+3. When you see **开机自启：已安装** (Startup: installed), you're done.
 
 > If Windows SmartScreen appears, click **More info → Run anyway** (the exe is not code-signed).
 > Some antivirus products may ask for permission to create a scheduled task; allow it.
@@ -58,7 +60,7 @@ Windows 11 enables **Fast Startup** by default. With Fast Startup, an "At startu
 - **Connected devices**: client count
 - **Shared network**: the adapter currently providing Internet access (Ethernet / Wi-Fi)
 - **Startup**: whether the scheduled task is installed
-- Buttons: Turn on now, Open Windows hotspot settings, Refresh, Install/Uninstall startup
+- Buttons: **立即开启** (Turn on now), **打开系统热点设置** (Open Windows hotspot settings), **刷新** (Refresh), **安装开机自启 / 卸载开机自启** (Install / Uninstall startup)
 
 ## Command line
 
@@ -89,7 +91,7 @@ HotspotAuto.exe version    Show version
 
 ## Uninstall
 
-- Open the app and click **Uninstall startup**; or
+- Open the app and click **卸载开机自启** (Uninstall startup); or
 - Run `卸载开机自启.bat`; or
 - Run `HotspotAuto.exe uninstall`.
 
@@ -110,7 +112,7 @@ Open Task Scheduler as administrator. The task name is `HotspotAuto`.
 The exe is not code-signed. Click **More info → Run anyway**.
 
 **Will install/uninstall show a UAC prompt?**
-On this machine UAC is configured to elevate silently; on other machines it may prompt once.
+Depending on your UAC settings, it may prompt once; allow it.
 
 **Where is the log?**
 `C:\ProgramData\HotspotAuto\hotspot.log`. The background task runs as SYSTEM and writes it.
