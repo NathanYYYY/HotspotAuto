@@ -1,0 +1,22 @@
+# Build output
+dist/
+bin/
+obj/
+
+# Local diagnostics and temporary captures
+diag/
+*.etl
+status*.txt
+task-check.xml
+off.txt
+status-after.txt
+status-check.txt
+status-cold*.txt
+
+# IDE / user files
+.vs/
+*.user
+*.suo
+
+# Logs
+*.log
